@@ -4,6 +4,7 @@ import "./globals.css";
 import Hero from "@/component/hero/Page";
 import Page1 from "@/component/hero/Page1";
 import Navbar from "@/component/Navbar/page";
+import Footer from "@/component/Footer/page";
 
 
 export default function RootLayout({
@@ -18,6 +19,8 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+
+          <Footer />
         </div>
 
       </body>
