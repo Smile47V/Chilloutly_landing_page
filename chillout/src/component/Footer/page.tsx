@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from "next/image";
 import React from 'react'
+import Button from '../Button';
 
 function Footer() {
     return (
@@ -102,21 +103,32 @@ function Footer() {
                             <div className="text-[#FFFFFF] text-4xl font-bold">Stay Updated With<br />Finacial Insights</div>
                             <p className="text-[#FFFFFF]">Get expert tips, market and exclusive offers<br />delevered to your inbox.</p>
                         </div>
-                        <div className='w-full bg-[#EDEDED]'>
-                            <div>
-                                <div className="w-8 h-8 bg-[#D9D9D9] rounded-full flex items-center justify-center">
+                        <div className="w-full bg-[#EDEDED] mt-3 px-4 py-3">
+                            <div className="flex flex-col sm:flex-row items-center  sm:gap-4">
+                                {/* Icon */}
+                                <div className="w-12 h-12 bg-[#D9D9D9] rounded-full flex items-center justify-center flex-shrink-0">
                                     <Link href="/">
                                         <Image
-                                            src="/icons/x.png"
-                                            alt="Logo"
-                                            width={20}
-                                            height={20}
+                                            src="/icons/mail.png"
+                                            alt="Mail Icon"
+                                            width={24}
+                                            height={24}
                                         />
                                     </Link>
                                 </div>
-                            </div>
 
+                                {/* Form */}
+                                <form className="flex flex-1 w-full max-w-xl text-black" action="">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter your email address"
+                                        className="flex-1 px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                    />
+                                    <button className="rounded-r-md px-6 text-white bg-[#272F57] rounded-4xl cursor-pointer">Subscribe</button>
+                                </form>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
