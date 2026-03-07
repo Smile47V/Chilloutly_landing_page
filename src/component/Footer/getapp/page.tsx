@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+
 
 function Getapp() {
     return (
@@ -18,11 +18,9 @@ function Getapp() {
                     </div>
 
                     <div className="w-1/2 flex justify-center">
-                        <Image
-                            src="/icons/Mockup.png"
-                            alt="Logo"
-                            width={900}
-                            height={1050}
+                        <img
+                            src="/Mockup.png"
+                            alt="App Mockup"
                             className="w-full max-w-md h-auto"
                         />
                     </div>

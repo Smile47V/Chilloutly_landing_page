@@ -1,14 +1,15 @@
 #!/bin/bash
+set -e
 
-echo "Building Next.js project...🚀"
+echo "🚀 Building Next.js project..."
+rm -rf out
 npm run build
 
-echo "Deploying infrastructure...!!!!!!!!!!"
+echo "📦 Deploying infrastructure..."
 
 cd infrastructure
 
 terraform init
-terraform plan
-terraform apply 
+terraform apply -auto-approve
 
-echo "Deployment complete 🚀"
+echo "✅ Deployment complete 🚀"

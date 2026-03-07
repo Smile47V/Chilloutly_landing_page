@@ -103,6 +103,14 @@ resource "aws_cloudfront_distribution" "landing_page_cf" {
 # Upload Static Files to S3
 # --------------------------
 resource "null_resource" "upload_files" {
+
+  triggers = {
+    site_hash = sha256(join("", [
+      for f in fileset("../out", "**") :
+      filesha256("../out/${f}")
+    ]))
+  }
+
   provisioner "local-exec" {
     command = "aws s3 sync ../out/ s3://${aws_s3_bucket.landing_page.id} --delete"
   }

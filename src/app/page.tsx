@@ -61,47 +61,42 @@ export default function Home() {
                     <h1 className="font-bold text-4xl">Why <span className="text-[#6F87F8]">Chilloutly?</span></h1>
                     <div>
                         <div className="flex flex-row gap-2 items-center mb-5">
-                            <Image
+                            <img
                                 src="/icons/feat-arr.png"
-                                alt="Logo"
-                                width={20}
-                                height={4}
+                                alt="arrow"
+                                className="w-[20px] h-auto"
                             />
                             <p>Intuitive and easy-to-use interface</p>
                         </div>
                         <div className="flex flex-row gap-2 items-center mb-5">
-                            <Image
+                            <img
                                 src="/icons/feat-arr.png"
-                                alt="Logo"
-                                width={20}
-                                height={4}
+                                alt="arrow"
+                                className="w-[20px] h-auto"
                             />
                             <p>Verified events and trusted community</p>
                         </div>
                         <div className="flex flex-row gap-2 items-center mb-5">
-                            <Image
+                            <img
                                 src="/icons/feat-arr.png"
-                                alt="Logo"
-                                width={20}
-                                height={4}
+                                alt="arrow"
+                                className="w-[20px] h-auto"
                             />
                             <p>Real-time updates and instant notifications</p>
                         </div>
                         <div className="flex flex-row gap-2 items-center mb-5">
-                            <Image
+                            <img
                                 src="/icons/feat-arr.png"
-                                alt="Logo"
-                                width={20}
-                                height={4}
+                                alt="arrow"
+                                className="w-[20px] h-auto"
                             />
                             <p>Secure payments and refund system</p>
                         </div>
                         <div className="flex flex-row gap-2 items-center mb-5">
-                            <Image
+                            <img
                                 src="/icons/feat-arr.png"
-                                alt="Logo"
-                                width={20}
-                                height={4}
+                                alt="arrow"
+                                className="w-[20px] h-auto"
                             />
                             <p>Perfect for individuals, brands, and event planners</p>
                         </div>
@@ -109,12 +104,10 @@ export default function Home() {
 
                 </div>
                 <div className="flex flex-col md:flex-row px-7 w-full justify-center items-center md:w-[50%] gap-6 mt-10">
-                    <Image
+                    <img
                         src="/icons/Group.png"
-                        alt="Logo"
-                        width={400}
-                        height={550}
-                        className="md:max-w[40%] transition-transform duration-300 hover:scale-110"
+                        alt="Group"
+                        className="w-[400px] max-w-full transition-transform duration-300 hover:scale-110"
                     />
                 </div>
 
